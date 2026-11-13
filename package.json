@@ -1,0 +1,17 @@
+{
+  "name": "servicio-web-agenda",
+  "version": "1.0.0",
+  "description": "Servicio web Express para listar y almacenar contactos.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test"
+  },
+  "keywords": ["express", "agenda", "servicio-web"],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {}
+}
