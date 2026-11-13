@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agenda de contactos</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <p class="eyebrow">SERVICIO WEB · EXPRESS</p>
+        <h1>Agenda de contactos</h1>
+        <p class="intro">Guarda y consulta tus contactos usando la API REST.</p>
+      </header>
+
+      <section class="card">
+        <h2>Agregar contacto</h2>
+        <form id="contact-form">
+          <label>Nombre<input name="nombre" required maxlength="100" placeholder="Ej. Ana Pérez"></label>
+          <label>Teléfono<input name="telefono" required maxlength="30" placeholder="Ej. 809-555-0101"></label>
+          <label>Email <span>(opcional)</span><input name="email" type="email" maxlength="120" placeholder="ana@correo.com"></label>
+          <button type="submit">Guardar contacto</button>
+        </form>
+        <p id="message" role="status"></p>
+      </section>
+
+      <section class="card">
+        <div class="section-title"><h2>Contactos guardados</h2><button id="refresh" class="secondary">Actualizar</button></div>
+        <p id="loading">Cargando contactos…</p>
+        <ul id="contacts" class="contacts"></ul>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
